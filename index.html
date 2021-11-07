@@ -8,7 +8,236 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    Hello World
+    <button class="visually-hidden">Skip to main</button>
+    <h1 class="visually-hidden">
+      Сайт Государственного музея изобразительных искусств имени А.С. Пушкина
+    </h1>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a class="header__logo-link" href="/" aria-label="Перейти на главную">
+            <img
+              class="header__logo-img"
+              src="/images/logo.svg"
+              alt="Логотип музея"
+            />
+          </a>
+        </div>
+        <form class="header__search" role="search">
+          <input
+            class="header__search-input"
+            type="search"
+            aria-label="Поиск по сайту"
+          />
+          <button
+            class="header__search-submit"
+            type="button"
+            aria-labelledby="searchtitle"
+          >
+            <span id="searchtitle" class="visually-hidden"
+              >Отправить запрос</span
+            >
+          </button>
+        </form>
+        <nav class="header__language" aria-label="Выбрать язык">
+          <span class="header__lang-button header__lang-button_active"
+            ><span aria-hidden="true">RU</span
+            ><span class="visually-hidden">Русский</span></span
+          >
+          <a
+            class="header__lang-button"
+            href="#"
+            hreflang="eng"
+            aria-label="English"
+            >EN</a
+          >
+        </nav>
+        <div class="header__lc">
+          <button
+            class="header__lc-open"
+            aria-haspopup="dialog"
+            aria-label="Открыть модальное окно"
+          ></button>
+          <div
+            class="header__lc-modal"
+            tabindex="-1"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalHeading"
+          >
+            <h2 class="header__lc-heading">Вход в личный кабинет</h2>
+            <form class="header__lc-form">
+              <div class="header__lc-field">
+                <label class="header__lc-field-label" for="lc-login"
+                  >Логин</label
+                >
+                <input
+                  class="header__lc-field-input"
+                  id="lc-login"
+                  type="text"
+                />
+              </div>
+              <div class="header__lc-field">
+                <label class="header__lc-field-label" for="lc-password"
+                  >Пароль</label
+                >
+                <input
+                  class="header__lc-field-input"
+                  id="lc-password"
+                  type="password"
+                />
+              </div>
+              <button class="header__lc-send" type="button">Отправить</button>
+            </form>
+            <button
+              class="header__modal-close"
+              aria-label="Закрыть модальное окно"
+            ></button>
+          </div>
+        </div>
+      </div>
+
+      <nav class="header__nav" aria-labelledby="nav-main">
+        <h2 class="visually-hidden" id="nav-main">Навигация по сайту</h2>
+        <ul>
+          <li><a href="#museum">Музей</a></li>
+          <li><a href="#audiences">Посетителям</a></li>
+          <li><a href="#exibitions">Выставки и события</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <nav class="audiences" id="#audiences" aria-labelledby="audiences-label">
+        <h2 class="visually-hidden" id="audiences-label">
+          Опции для посетителей
+        </h2>
+        <ul
+          class="audiences__options"
+          aria-describedby="Эти страницы пока не готовы, но мы над этим работаем!"
+        >
+          <li class="audiences__options-item">
+            <a class="audiences__options-link" href="#">Купить билет</a>
+          </li>
+          <li class="audiences__options-item">
+            <a class="audiences__options-link" href="#">Стать другом</a>
+          </li>
+          <li class="audiences__options-item">
+            <a class="audiences__options-link" href="#"> Онлайн-магазин</a>
+          </li>
+        </ul>
+      </nav>
+      <section
+        class="exibitions"
+        id="#exibitions"
+        aria-labelledby="exibitions-label"
+      >
+        <h2 class="exibitions__heading" id="exibitions-label">
+          Выставки и события
+        </h2>
+        <ul class="exibitions__filters">
+          <li class="exibitions__filter-item">
+            <button class="exibitions__filter">Все</button>
+          </li>
+          <li class="exibitions__filter-item">
+            <button class="exibitions__filter" tabindex="-1">Сегодня</button>
+          </li>
+          <li class="exibitions__filter-item">
+            <button class="exibitions__filter" tabindex="-1">Завтра</button>
+          </li>
+        </ul>
+        <ul class="exibitions__events">
+          <li class="exibitions__event">
+            <div class="exibitions__event-image-wrapper">
+              <img
+                class="exibitions__event-image"
+                src="images/exibitions/1.jpg"
+                alt=""
+              />
+            </div>
+            <h3 class="exibitions__event-name">
+              Святослав Рихтер в&nbsp;кругу друзей. Москва&nbsp;&mdash;
+              Коктебель
+            </h3>
+            <h4 class="exibitions__event-date">
+              Выставка до&nbsp;20&nbsp;ноября
+            </h4>
+            <p class="exibitions__event-description">
+              Святослав Рихтер не рос на гаммах и этюдах. Его мощнейшее
+              «фортиссимо» и завораживающее «пианиссимо» — дар Божий, который в
+              один прекрасный момент заявил о себе.
+            </p>
+            <div class="exibitions__event-buy-wrapper">
+              <a
+                href="#"
+                class="exibitions__event-buy"
+                aria-label="Купить билет пока нельзя"
+                >Купить билет</a
+              >
+            </div>
+          </li>
+
+          <li class="exibitions__event">
+            <div class="exibitions__event-image-wrapper">
+              <img
+                class="exibitions__event-image"
+                src="images/exibitions/1.jpg"
+                alt=""
+              />
+            </div>
+            <h3 class="exibitions__event-name">Тату</h3>
+            <h4 class="exibitions__event-date">
+              Выставка до&nbsp;27&nbsp;сентября
+            </h4>
+            <p class="exibitions__event-description">
+              Процесс относится к декоративным модификациям тела. Как правило,
+              татуировка и её вид определяются самим заказчиком, либо условиями
+              быта и социума.
+            </p>
+            <div class="exibitions__event-buy-wrapper">
+              <a
+                href="#"
+                class="exibitions__event-buy"
+                aria-label="Купить билет пока нельзя"
+                >Купить билет</a
+              >
+            </div>
+          </li>
+
+          <li class="exibitions__event">
+            <div class="exibitions__event-image-wrapper">
+              <img
+                class="exibitions__event-image"
+                src="images/exibitions/1.jpg"
+                alt=""
+              />
+            </div>
+            <h3 class="exibitions__event-name">
+              От&nbsp;Дюрера до&nbsp;Матисса. Избранные рисунки из&nbsp;собрания
+              ГМИИ им. А.С. Пушкина
+            </h3>
+            <h4 class="exibitions__event-date">
+              Выставка до&nbsp;1&nbsp;ноября
+            </h4>
+            <p class="exibitions__event-description">
+              Альбрехт Дюрер - первый теоретик искусства среди североевропейских
+              художников, автор практического руководства по изобразительному и
+              декоративно-прикладному искусству на немецком языке,
+              пропагандировавший необходимость разностороннего развития
+              художников. Основоположник сравнительной антропометрии.
+            </p>
+            <div class="exibitions__event-buy-wrapper">
+              <a
+                href="#"
+                class="exibitions__event-buy"
+                aria-label="Купить билет пока нельзя"
+                >Купить билет</a
+              >
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer></footer>
     <script src="script.js"></script>
   </body>
 </html>
