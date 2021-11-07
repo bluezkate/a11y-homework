@@ -159,12 +159,14 @@
           <h2 class="exibitions__heading" id="exibitions-label">
             Выставки и события
           </h2>
-          <span aria-hidden="true" id="filters-label"
+          <span aria-hidden="true" class="visually-hidden" id="filters-label"
             >Фильтр событий по дате</span
           >
           <ul class="exibitions__filters" aria-labelledby="filters-label">
             <li class="exibitions__filter-item">
-              <button class="exibitions__filter">Все</button>
+              <button class="exibitions__filter exibitions__filter_active">
+                Все
+              </button>
             </li>
             <li class="exibitions__filter-item">
               <button class="exibitions__filter" tabindex="-1">Сегодня</button>
@@ -173,7 +175,10 @@
               <button class="exibitions__filter" tabindex="-1">Завтра</button>
             </li>
           </ul>
-          <span aria-hidden="true" id="exibitions-list-label"
+          <span
+            aria-hidden="true"
+            class="visually-hidden"
+            id="exibitions-list-label"
             >Ближайшие выставки и события</span
           >
           <ul
@@ -305,7 +310,10 @@
                 role="tabpanel"
                 tabindex="0"
               >
-                <span aria-hidden="true" id="buildings-label"
+                <span
+                  class="visually-hidden"
+                  aria-hidden="true"
+                  id="buildings-label"
                   >Состав музея</span
                 >
                 <ul class="museum__buildings" aria-labelledby="buildings-label">
