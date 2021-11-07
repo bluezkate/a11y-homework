@@ -526,6 +526,10 @@ img {
   margin-bottom: 35px;
 }
 
+.footer__subscribe-form {
+  position: relative;
+}
+
 .footer__subscribe-wrapper {
   display: flex;
   align-items: center;
@@ -553,6 +557,9 @@ img {
 }
 
 .footer__subscribe-submit {
+  position: absolute;
+  right: 0;
+  top: 0;
   background-color: #5d16d5;
   color: #ffffff;
   border: 1px solid #5d16d5;
@@ -569,6 +576,11 @@ img {
   border-color: #5d16d5d6;
 }
 
+.footer__subscribe-submit:focus {
+  outline: 1px solid #000000;
+  outline-offset: 2px;
+}
+
 .footer__subscribe-wrapper {
   display: flex;
   align-items: center;
@@ -581,6 +593,10 @@ img {
 .footer__subscribe-checkbox-input:checked
   + .footer__subscribe-checkbox-custom:before {
   opacity: 1;
+}
+.footer__subscribe-checkbox-input:focus + .footer__subscribe-checkbox-custom {
+  outline: 1px solid #000000;
+  outline-offset: 2px;
 }
 
 .footer__subscribe-checkbox-custom {
