@@ -14,9 +14,11 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <button id="skipToMain" class="visually-hidden" type="button">
-      Skip to main
-    </button>
+    <div class="container">
+      <button id="skipToMain" class="visually-hidden" type="button">
+        Skip to main
+      </button>
+    </div>
     <h1 class="visually-hidden">
       Сайт Государственного музея изобразительных искусств имени А.С. Пушкина
     </h1>
@@ -72,40 +74,49 @@
               aria-label="Открыть модальное окно"
             ></button>
             <div
-              class="header__lc-modal"
+              class="header__lc-modal modal"
               tabindex="-1"
               role="dialog"
               aria-modal="true"
               aria-labelledby="modalHeading"
             >
-              <h2 class="header__lc-heading">Вход в личный кабинет</h2>
-              <form class="header__lc-form">
-                <div class="header__lc-field">
-                  <label class="header__lc-field-label" for="lc-login"
-                    >Логин</label
-                  >
-                  <input
-                    class="header__lc-field-input"
-                    id="lc-login"
-                    type="text"
-                  />
-                </div>
-                <div class="header__lc-field">
-                  <label class="header__lc-field-label" for="lc-password"
-                    >Пароль</label
-                  >
-                  <input
-                    class="header__lc-field-input"
-                    id="lc-password"
-                    type="password"
-                  />
-                </div>
-                <button class="header__lc-send" type="button">Отправить</button>
-              </form>
-              <button
-                class="header__modal-close"
-                aria-label="Закрыть модальное окно"
-              ></button>
+              <div class="modal__overlay"></div>
+              <div class="modal__wrapper">
+                <h2 class="modal__heading">Вход в личный кабинет</h2>
+                <form class="modal__form">
+                  <div class="modal__field">
+                    <label
+                      class="modal__field-label visually-hidden"
+                      for="lc-login"
+                      >Логин</label
+                    >
+                    <input
+                      class="modal__field-input"
+                      id="lc-login"
+                      type="text"
+                      placeholder="Логин"
+                    />
+                  </div>
+                  <div class="modal__field">
+                    <label
+                      class="modal__field-label visually-hidden"
+                      for="lc-password"
+                      >Пароль</label
+                    >
+                    <input
+                      class="modal__field-input"
+                      id="lc-password"
+                      type="password"
+                      placeholder="Пароль"
+                    />
+                  </div>
+                  <button class="modal__send" type="button">Отправить</button>
+                </form>
+                <button
+                  class="modal__close"
+                  aria-label="Закрыть модальное окно"
+                ></button>
+              </div>
             </div>
           </div>
         </div>
