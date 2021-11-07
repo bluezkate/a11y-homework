@@ -14,11 +14,15 @@ const onFirstTabPress = (evt) => {
 
 document.addEventListener("keyup", onFirstTabPress)
 
-skipLink.addEventListener("keyup", function (event) {
-  main.setAttribute("tabindex", 0)
-  main.focus()
-  skipLink.classList.add("visually-hidden")
-  main.removeAttribute("tabindex")
+skipLink.addEventListener("keyup", function (evt) {
+  const isEnter = evt.code === "Enter"
+
+  if (isEnter) {
+    main.setAttribute("tabindex", 0)
+    main.focus()
+    skipLink.classList.add("visually-hidden")
+    main.removeAttribute("tabindex")
+  }
 })
 
 // Modal
