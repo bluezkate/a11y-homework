@@ -12,7 +12,7 @@
     <h1 class="visually-hidden">
       Сайт Государственного музея изобразительных искусств имени А.С. Пушкина
     </h1>
-    <header class="header">
+    <header class="header" role="banner">
       <div class="header__wrapper">
         <div class="header__logo">
           <a class="header__logo-link" href="/" aria-label="Перейти на главную">
@@ -106,7 +106,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main role="main">
       <nav class="audiences" id="#audiences" aria-labelledby="audiences-label">
         <h2 class="visually-hidden" id="audiences-label">
           Опции для посетителей
@@ -466,8 +466,103 @@
           ></iframe>
         </div>
       </section>
+      <section class="live" id="live" aria-labelledby="live-label">
+        <h2 class="live__heading" id="live-label">
+          Экскурсии и лекции в прямом эфире
+        </h2>
+        <div class="live__main">
+          <p class="live__text">
+            С&nbsp;1&nbsp;июля вы&nbsp;можете присоединиться к&nbsp;нашим
+            виртуальным мероприятиям&nbsp;&mdash; экскурсиям и&nbsp;лекциям для
+            взрослых и&nbsp;детей, оплатив участие на&nbsp;сайте. Встречи будут
+            проходить в&nbsp;прямом эфире на&nbsp;платформе Zoom; предусмотрен
+            формат живого общения с&nbsp;возможностью задавать вопросы
+            экскурсоводу (лектору).
+            <a href="#" aria-label="Более подробная информация будет позже."
+              >Подробнее.</a
+            >
+          </p>
+          <p class="live__text">
+            Мы&nbsp;будем благодарны за&nbsp;любое
+            <a href="#" aria-hidden="true">пожертвование</a> . Все поступившие
+            средства будут направлены на&nbsp;организацию онлайн-проектов для
+            наших посетителей.
+          </p>
+          <a href="#" class="visually-hidden"
+            >Прием пожертвований пока не активен, следите за обновлениями</a
+          >
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer" role="contentinfo">
+      <div class="footer__more">
+        <div class="footer__links"></div>
+        <div class="footer__socials">
+          <h2
+            class="footer__socials-title"
+            id="socials-label"
+            aria-label="Мы в социальных сетях"
+          >
+            Соц. сети
+          </h2>
+          <ul class="footer__socials-list" aria-labelledby="socials-label">
+            <li class="footer__socials-item">
+              <a
+                class="footer__socials-link"
+                href="#"
+                aria-label="Наша почта"
+              ></a>
+            </li>
+            <li class="footer__socials-item">
+              <a
+                class="footer__socials-link"
+                href="#"
+                aria-label="Наша Телеграм"
+              ></a>
+            </li>
+            <li class="footer__socials-item">
+              <a
+                class="footer__socials-link"
+                href="#"
+                aria-label="Наш Фейсбук"
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__subscribe">
+        <h2 class="footer__subscribe-heading" id="subscribe-label">
+          Подписка на новости
+        </h2>
+        <form class="footer__subscribe-form" aria-labelledby="subscribe-label">
+          <div class="footer__subscribe-wrapper">
+            <div class="footer__subscribe-field">
+              <label for="subscribe-email" class="visually-hidden"
+                >Ваш E-mail</label
+              >
+              <input id="subscribe-email" type="email" placeholder="E-mail" />
+            </div>
+            <button class="footer__subscribe-submit" type="button">
+              Подписаться
+            </button>
+          </div>
+          <div class="footer__subscribe-wrapper">
+            <label
+              class="footer__subscribe-checkbox-label"
+              for="subscribe-consent"
+            >
+              Согласен на обработку персональных данных
+              <input
+                class="footer__subscribe-checkbox-input"
+                type="checkbox"
+                id="subscribe-consent"
+              />
+              <span class="footer__subscribe-checkbox-custom"></span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
