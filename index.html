@@ -525,15 +525,20 @@
               будут проходить в&nbsp;прямом эфире на&nbsp;платформе Zoom;
               предусмотрен формат живого общения с&nbsp;возможностью задавать
               вопросы экскурсоводу (лектору).
-              <a href="#" aria-label="Более подробная информация будет позже."
+              <a
+                class="live__link live__link_block"
+                href="#"
+                aria-label="Более подробная информация будет позже."
                 >Подробнее.</a
               >
             </p>
             <p class="live__text">
               Мы&nbsp;будем благодарны за&nbsp;любое
-              <a href="#" aria-hidden="true">пожертвование</a> . Все поступившие
-              средства будут направлены на&nbsp;организацию онлайн-проектов для
-              наших посетителей.
+              <a class="live__link" href="#" aria-hidden="true"
+                >пожертвование</a
+              >
+              . Все поступившие средства будут направлены на&nbsp;организацию
+              онлайн-проектов для наших посетителей.
             </p>
             <a href="#" class="visually-hidden"
               >Прием пожертвований пока не активен, следите за обновлениями</a
@@ -560,31 +565,31 @@
               </li>
             </ul>
             <div class="footer__socials">
-              <h2
+              <h3
                 class="footer__socials-title"
                 id="socials-label"
                 aria-label="Мы в социальных сетях"
               >
                 Соц. сети
-              </h2>
+              </h3>
               <ul class="footer__socials-list" aria-labelledby="socials-label">
                 <li class="footer__socials-item">
                   <a
-                    class="footer__socials-link"
+                    class="footer__socials-link footer__socials-link_mail"
                     href="#"
                     aria-label="Наша почта"
                   ></a>
                 </li>
                 <li class="footer__socials-item">
                   <a
-                    class="footer__socials-link"
+                    class="footer__socials-link footer__socials-link_tg"
                     href="#"
                     aria-label="Наша Телеграм"
                   ></a>
                 </li>
                 <li class="footer__socials-item">
                   <a
-                    class="footer__socials-link"
+                    class="footer__socials-link footer__socials-link_fb"
                     href="#"
                     aria-label="Наш Фейсбук"
                   ></a>
@@ -593,9 +598,9 @@
             </div>
           </div>
           <div class="footer__subscribe">
-            <h2 class="footer__subscribe-heading" id="subscribe-label">
+            <h3 class="footer__subscribe-heading" id="subscribe-label">
               Подписка на новости
-            </h2>
+            </h3>
             <form
               class="footer__subscribe-form"
               aria-labelledby="subscribe-label"
@@ -609,6 +614,7 @@
                     id="subscribe-email"
                     type="email"
                     placeholder="E-mail"
+                    class="footer__subscribe-input"
                   />
                 </div>
                 <button class="footer__subscribe-submit" type="button">
@@ -616,17 +622,24 @@
                 </button>
               </div>
               <div class="footer__subscribe-wrapper">
+                <input
+                  class="footer__subscribe-checkbox-input visually-hidden"
+                  type="checkbox"
+                  id="subscribe-consent"
+                />
+                <span class="footer__subscribe-checkbox-custom"></span>
                 <label
                   class="footer__subscribe-checkbox-label"
                   for="subscribe-consent"
+                  aria-labelledby="subscribe-label"
                 >
-                  Согласен на обработку персональных данных
-                  <input
-                    class="footer__subscribe-checkbox-input"
-                    type="checkbox"
-                    id="subscribe-consent"
-                  />
-                  <span class="footer__subscribe-checkbox-custom"></span>
+                  <span
+                    aria-hidden="true"
+                    id="subscribe-label"
+                    class="footer__subscribe-checkbox-text"
+                  >
+                    Согласен на обработку персональных данных
+                  </span>
                 </label>
               </div>
             </form>
