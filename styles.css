@@ -19,6 +19,11 @@ button {
 a {
   color: #000000;
   border-radius: 4px;
+  transform: opacity 0.2s ease-in-out;
+}
+
+a:hover {
+  opacity: 0.6;
 }
 
 .visually-hidden {
@@ -251,11 +256,19 @@ img {
   cursor: pointer;
 }
 
+.exibitions__filter:hover {
+  text-decoration: underline;
+}
+
 .exibitions__filter_active {
   padding: 17px 38px;
   border-radius: 8px;
   background-color: #c7d2e9;
   border: 1px solid #c7d2e9;
+}
+
+.exibitions__filter_active:hover {
+  text-decoration: none;
 }
 
 .exibitions__events {
@@ -323,11 +336,19 @@ img {
   cursor: pointer;
 }
 
+.museum__tab:hover {
+  text-decoration: underline;
+}
+
 .museum__tab_active {
   padding: 17px 38px;
   border-radius: 8px;
   background-color: #c7d2e9;
   border: 1px solid #c7d2e9;
+}
+
+.museum__tab_active:hover {
+  text-decoration: none;
 }
 
 .museum__panel_hidden {
