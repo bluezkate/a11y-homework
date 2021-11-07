@@ -134,7 +134,10 @@
         <h2 class="exibitions__heading" id="exibitions-label">
           Выставки и события
         </h2>
-        <ul class="exibitions__filters">
+        <span aria-hidden="true" id="filters-label"
+          >Фильтр событий по дате</span
+        >
+        <ul class="exibitions__filters" aria-labelledby="filters-label">
           <li class="exibitions__filter-item">
             <button class="exibitions__filter">Все</button>
           </li>
@@ -145,7 +148,10 @@
             <button class="exibitions__filter" tabindex="-1">Завтра</button>
           </li>
         </ul>
-        <ul class="exibitions__events">
+        <span aria-hidden="true" id="exibitions-list-label"
+          >Ближайшие выставки и события</span
+        >
+        <ul class="exibitions__events" aria-labelledby="exibitions-list-label">
           <li class="exibitions__event">
             <div class="exibitions__event-image-wrapper">
               <img
@@ -242,7 +248,7 @@
           <div class="museum__tabs" role="tablist">
             <div class="museum__tab-wrapper">
               <button
-                class="museum__tab"
+                class="museum__tab museum__tab_active"
                 id="museum-buildings"
                 role="tab"
                 aria-controls="museum-buildings"
@@ -261,6 +267,203 @@
               </button>
             </div>
           </div>
+          <div class="museum__panels">
+            <section
+              class="museum__panel"
+              id="panel-buildings"
+              aria-labelledby="museum-buildings"
+              role="tabpanel"
+              tabindex="0"
+            >
+              <span aria-hidden="true" id="buildings-label">Состав музея</span>
+              <ul class="museum__buildings" aria-labelledby="buildings-label">
+                <li class="museum__building">
+                  <div class="museum__building-image-wrapper">
+                    <img
+                      class="museum__building-image"
+                      src="images/museum/buildings/1.png"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="museum__building-name">
+                    Мемориальная квартира С.Т. Рихтера
+                  </h3>
+                  <p class="museum__building-address">
+                    ул. Большая Бронная, 2/6, 16 этаж, кв. 58
+                  </p>
+                  <div class="museum__building-buy-wrapper">
+                    <a
+                      href="#"
+                      class="museum__building-more"
+                      aria-label="Страница 'Подробнее' пока не готова"
+                      >Подробнее</a
+                    >
+                  </div>
+                </li>
+                <li class="museum__building">
+                  <div class="museum__building-image-wrapper">
+                    <img
+                      class="museum__building-image"
+                      src="images/museum/buildings/2.png"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="museum__building-name">ЦЭВ «МУСЕЙОН»</h3>
+                  <p class="museum__building-address">
+                    Колымажный пер., 6/2, 3&nbsp;(вход с&nbsp;Малого Знаменского
+                    переулка)
+                  </p>
+                  <div class="museum__building-buy-wrapper">
+                    <a
+                      href="#"
+                      class="museum__building-more"
+                      aria-label="Страница 'Подробнее' пока не готова"
+                      >Подробнее</a
+                    >
+                  </div>
+                </li>
+                <li class="museum__building">
+                  <div class="museum__building-image-wrapper">
+                    <img
+                      class="museum__building-image"
+                      src="images/museum/buildings/3.png"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="museum__building-name">Усадьба Лопухиных</h3>
+                  <p class="museum__building-address">
+                    Малый Знаменский пер., 3/5с4
+                  </p>
+                  <div class="museum__building-buy-wrapper">
+                    <a
+                      href="#"
+                      class="museum__building-more"
+                      aria-label="Страница 'Подробнее' пока не готова"
+                      >Подробнее</a
+                    >
+                  </div>
+                </li>
+                <li class="museum__building">
+                  <div class="museum__building-image-wrapper">
+                    <img
+                      class="museum__building-image"
+                      src="images/museum/buildings/4.png"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="museum__building-name">Учебный музей</h3>
+                  <p class="museum__building-address">ул. Чаянова, 15</p>
+                  <div class="museum__building-buy-wrapper">
+                    <a
+                      href="#"
+                      class="museum__building-more"
+                      aria-label="Страница 'Подробнее' пока не готова"
+                      >Подробнее</a
+                    >
+                  </div>
+                </li>
+                <li class="museum__building">
+                  <div class="museum__building-image-wrapper">
+                    <img
+                      class="museum__building-image"
+                      src="images/museum/buildings/5.png"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="museum__building-name">Отдел личных коллекций</h3>
+                  <p class="museum__building-address">ул. Волхонка, 10</p>
+                  <div class="museum__building-buy-wrapper">
+                    <a
+                      href="#"
+                      class="museum__building-more"
+                      aria-label="Страница 'Подробнее' пока не готова"
+                      >Подробнее</a
+                    >
+                  </div>
+                </li>
+                <li class="museum__building">
+                  <div class="museum__building-image-wrapper">
+                    <img
+                      class="museum__building-image"
+                      src="images/museum/buildings/6.png"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="museum__building-name">Галерея</h3>
+                  <p class="museum__building-address">ул. Волхонка, 14</p>
+                  <div class="museum__building-buy-wrapper">
+                    <a
+                      href="#"
+                      class="museum__building-more"
+                      aria-label="Страница 'Подробнее' пока не готова"
+                      >Подробнее</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section
+              class="museum__panel museum__panel_hidden"
+              id="panel-history"
+              aria-labelledby="museum-history"
+              role="tabpanel"
+              tabindex="-1"
+            >
+              <div class="museum__history">
+                <p class="museum__history-text">
+                  Государственный музей изобразительных искусств имени А.С.
+                  Пушкина&nbsp;&mdash; одно из&nbsp;крупнейших в&nbsp;России
+                  художественных собраний зарубежного искусства
+                  с&nbsp;древнейших времен до&nbsp;наших дней.
+                </p>
+                <p class="museum__history-text">
+                  В&nbsp;современной экспозиции представлены обширная учебная
+                  коллекция тонированных гипсовых слепков с&nbsp;произведений
+                  Античности, Средних веков и&nbsp;эпохи Возрождения,
+                  а&nbsp;также собрание подлинных произведений живописи,
+                  скульптуры, графики и&nbsp;декоративно-прикладного искусства.
+                </p>
+                <p class="museum__history-text">
+                  В&nbsp;залах первого этажа Главного здания представлены:
+                  произведения искусства Древнего Египта, Античности, собрание
+                  европейской живописи VIII&ndash;XVIII&nbsp;веков; два
+                  зала&nbsp;&mdash; Итальянский и&nbsp;Греческий
+                  дворики&nbsp;&mdash; занимают слепки. На&nbsp;втором этаже
+                  Главного здания в&nbsp;залах размещены слепки произведений
+                  искусства Древней Греции, Рима, Средних веков
+                  и&nbsp;Возрождения.
+                </p>
+                <p class="museum__history-text">
+                  В&nbsp;начале 2017 года музей определил новое направление
+                  своей деятельности&nbsp;&mdash; Пушкинский XXI,&nbsp;&mdash;
+                  ориентированное на&nbsp;современное российское и&nbsp;западное
+                  искусство во&nbsp;всех аспектах&nbsp;&mdash; выставочном,
+                  образовательном и&nbsp;исследовательском. Таким образом, ГМИИ
+                  им. А.С. Пушкина представляет собой открытую, интерактивную
+                  сцену, демонстрирующую развитие мировой культуры
+                  с&nbsp;древности до&nbsp;наших дней, живое, знакомое
+                  с&nbsp;детства пространство для получения знаний
+                  и&nbsp;общения.
+                </p>
+                <button class="museum__history-more">Читать далее</button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="streams" id="streams" aria-labelledby="streams-label">
+        <h2 class="streams__heading" id="streams-label">Онлайн-трансляции</h2>
+        <div class="streams__frame-wrapper">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/pSYzSukMPoM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            class="streams__frame"
+          ></iframe>
         </div>
       </section>
     </main>
